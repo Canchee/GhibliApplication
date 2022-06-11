@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="content_description_film">film banner</string>
+    <string name="label_director">Director</string>
+    <string name="label_producer">Producer</string>
+    <string name="label_year">Year</string>
+    <string name="label_score">Score</string>
+    <string name="label_movie_category">Anime</string>
+    <string name="todo">TODO</string>
+    <string name="description_main">Select your favorite film and click for see details</string>
+
+    <string name="app_name">GhibliApp</string>
+    <string name="downloading">Descargando...</string>
+    <string name="description">Descripción:</string>
+    <string name="directed_by">Dirigido por:</string>
+    <string name="produced_by">Producido por:</string>
+
+    <string name="hint">Buscar...</string>
+
+    <style name="label_splash">Splash screen</style>
+</resources>

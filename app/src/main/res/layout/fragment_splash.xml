@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/splash_screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/logo_imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_studio_ghibli_logo"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_20"
+        app:layout_constraintEnd_toStartOf="@id/guideline_v_80"
+        app:layout_constraintTop_toTopOf="@id/guideline_h_15"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_h_75"/>
+
+    <TextView
+        android:id="@+id/loading_message_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/downloading"
+        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:gravity="bottom|center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/guideline_h_75"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h_80"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_20"
+        app:layout_constraintEnd_toStartOf="@id/guideline_v_80"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_lottieAnimation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/loading_line"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h_90"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h_80"
+        app:layout_constraintStart_toStartOf="@+id/guideline_v_20"
+        app:layout_constraintEnd_toStartOf="@id/guideline_v_80"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_75"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h_90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
