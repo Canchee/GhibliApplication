@@ -1,4 +1,4 @@
-<h1 align="center">GlibhiApp</h1>
+<h1 align="center">GhilbiApp</h1>
 
 ## This Android Application contains
 
