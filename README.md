@@ -1,6 +1,6 @@
 <h1 align="center">GlibhiApp</h1>
 
-## Android Application
+## This Android Application contains
 
 - minSDK 21
 - kotlin
@@ -17,5 +17,5 @@
 - Veirify connectivity
 - Save the data using ROOM (offline)
 - Customize UI
-- Unit testa
+- Unit tests
 
